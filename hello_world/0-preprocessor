@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Ensure the CFILE variable is set
+if [ -z "$CFILE" ]; then
+    echo "Error: CFILE variable is not set."
+    exit 1
+fi
+
+# Run the preprocessor and save the output to file 'c'
+gcc -E "$CFILE" -o c
+
+# Check if the command was successful
+if [ $? -eq 0 ]; then
+    echo "Preprocessing completed successfully. Output saved in 'c'."
+else
+    echo "Error during preprocessing."
+fi
+
