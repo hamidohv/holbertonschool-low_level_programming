@@ -1,28 +1,30 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-/* Main function */
+#include <stdio.h>
+/* more headers goes there */
+/**
+ * main - entry point
+ *
+ * Return: positive, negative or equal
+ */
+/* betty style doc for function main goes there */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0)); // Seed the random number generator
-    n = rand() - RAND_MAX / 2; // Generate a random number
-
-    /* Check if n is positive, negative, or zero */
-    if (n > 0)
-    {
-        printf("%d is positive\n", n);
-    }
-    else if (n == 0)
-    {
-        printf("%d is zero\n", n);
-    }
-    else
-    {
-        printf("%d is negative\n", n);
-    }
-
-    return (0); // Return success
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("%i is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%i is zero\n", n);
+	}
+	else
+	{
+		printf("%i is negative\n", n);
+	}
+	return (0);
 }
