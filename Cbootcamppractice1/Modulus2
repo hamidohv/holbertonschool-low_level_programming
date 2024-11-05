@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    int x, y ;
+    printf ("Include two number: ");
+    scanf ("%d %d", &x, &y);
+    printf ("Remeinder of the two numbers above: %d", x%y);
+    //Always x>y.
+    return 0;
+}
