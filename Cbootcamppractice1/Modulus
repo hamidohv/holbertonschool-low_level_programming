@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    int x, y ;
+    printf ("Include two number: ");
+    scanf ("%d %d", &x, &y);
+    if (x>y)
+    {
+        printf ("Remeinder of %d/%d is: %d", x, y, x%y);
+        
+    }
+    else if (x==y)
+    {
+        printf ("Remeinder of %d/%d is: 0", x, y);
+    }
+    else 
+    {
+        printf ("Remeinder of %d/%d is: %d", y, x, y%x);
+    }
+    return 0;
+}
