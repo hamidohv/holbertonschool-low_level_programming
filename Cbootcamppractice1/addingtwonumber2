@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    int a , b;
+    printf ("Include two integers: ");
+    scanf ("%d %d", &a, &b);
+    printf ("Sum of them: %d", a+b);
+    return 0;
+}
