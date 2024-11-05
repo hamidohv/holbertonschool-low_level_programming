@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*
+     for (initializationStatement; testExpression; updateStatement)
+    {
+            // statements inside the body of loop
+    }
+    */
+    int y;
+    /*
+    for (y=0; y<10; y++)
+    {
+        printf ("%d ", y);
+    }
+    Output is: 0 1 2 3 4 5 6 7 8 9
+    */
+    /*
+    for (y=0; y<10; y++)
+    {
+        printf ("%d ", y+1);
+    }
+    Output is: 1 2 3 4 5 6 7 8 9 10
+    */
+    /*for (y=1; y<11; y++)
+    {
+        printf ("%d ", y);
+    }
+    Output is: 1 2 3 4 5 6 7 8 9 10
+    */
+    for (y=1; y<=10; y++)
+    {
+        printf ("%d ", y);
+    }
+    return 0;
+}
