@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    /*
+    #include - mueyyen bir directory ve ya library-nin contentinin 
+    computere yuklenmesini temin eden preprocessor telimatidir.
+    <stdio.h> - standart input/output proseslerinin heyata
+    kechmesini temin edir.
+    int main () - C progeamlari bir ve ya daha chox funksiyaya sahib
+    ola biler, amma bunlardan mutleq main funksiyasi olmalidir. ()bu
+    moterizeler main-in bir funksiya oldughunu gosterir. int main 
+    funksiyasinin tam eded deyerinde bir qiymet run etdireceyini 
+    bildirir.
+    
+    Basic Data Types 4 cur olur: 1) char (character) cemi birce dene
+    herf tuta bilir, %c ile isharelenir, hecmi 1 byte-dir; 2) int 
+    (integer), tam ededleri tutur, %d ile isharelenir, hecmi 4 bytes
+    -dir. Float kichik, Double boyuk onluq kesrleri tutur, muvafiq
+    olaraq %f ve %lf-le isharelenirler, float-in hecmi 4, double-nin
+    hecmi 16 bytes-dir.
+    
+    printf () moterizelerin icherisine "" icherisinde yazilanlari
+    console-a chap etdiren command-dir. \n - yeni setre kechid
+    etdiren, \" " ishareshi chap etdiren, \\ tek \ chap etdiren
+    isharelerdirler.
+    
+    return 0; - funksiyadan chixish uchun istifade olunur, programin
+    normal shekilde sonlandiriildighini gosterir.
+
+    // = comment line achma isharesi, /* multi-comment line */ 
+    */
+    int A=0, B=1, C=2;
+    float D=3.4, E=5.67, F=50.607;
+    double G=723.35, H=90.888;
+    char herf='A';
+    printf ("\"Hello World!\"\n");
+    printf ("Ilk reqemim: %d, Ikici reqemim: \"%d\", Uchuncu reqemim: \\%d\\\nOnluq kesrim: %.1f,     %.2f,     %.3f\n%.2lf, %.3lf.\n", A, B, C, D, E, F, G, H);
+    printf ("Ifadem: %c", herf);
+    return 0;
+}
