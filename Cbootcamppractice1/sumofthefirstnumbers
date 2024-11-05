@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*
+     Function to Calculate the Sum of the First N Natural Numbers:
+    */
+    int i , x , sum=0 ;
+    printf ("Include a number: ");
+    scanf ("%d", &x);
+    for (i=1; i<=x; i++)
+    {
+        sum += i ;
+    }
+    printf ("Sum of the First %d Natural Numbers: %d.", x, sum);
+    /*
+     for dongusunun ichinde bash verenler:
+            sum += i = sum += i == sum
+             0  +  1 =  1
+             1  +  2 =  3
+             3  +  3 =  6
+             6  +  4 =  10
+             10 +  5 =  15
+
+            sum:   i:  sum:
+             0  +  1 =  1
+             1  +  2 =  3
+             3  +  3 =  6
+             6  +  4 =  10
+             10 +  5 =  15
+
+
+     0+1=1 (ilk novbede sum variable-i ile i variable-i toplanir netice sum += i -nin qiymeti sayilir)
+     1+2=3 (daha sonra novbe ile sum += i -nin (her yeni) qiymeti ile i++ -un (her yeni) qiymeti toplanir, proses x -e qədər davam edir)
+     3+3=6
+     6+4=10
+     10+5=15
+    */
+    return 0;
+}
