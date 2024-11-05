@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*
+     Function to Calculate the Sum of the First N Natural Numbers:
+    */
+    int x = 0 ;
+    while (x<10)
+    {
+        x++;
+        printf ("%d ", x);
+    }
+    return 0;
+}
