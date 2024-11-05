@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    int a ;
+    printf ("Include a number: ");
+    scanf ("%d", &a);
+    printf ("The square of this number: %d", a*a);
+    return 0;
+}
